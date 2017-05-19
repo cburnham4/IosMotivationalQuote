@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Motivational_Quote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,67 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DockBG" translatesAutoresizingMaskIntoConstraints="NO" id="agA-PQ-gnb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O91-0m-wLl">
+                                <rect key="frame" x="131" y="390" width="113" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="86u-8R-aYS"/>
+                                    <constraint firstAttribute="width" constant="113" id="wBm-16-nQE"/>
+                                </constraints>
+                                <color key="tintColor" red="0.070588235289999995" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="New Quote">
+                                    <color key="titleShadowColor" red="0.37356263070000001" green="1" blue="0.19478699560000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestNewQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kY0-fL-gvf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doF-9R-0Vh">
+                                <rect key="frame" x="16" y="79" width="343" height="241"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-Oe-NPJ" customClass="GADBannerView">
+                                <rect key="frame" x="27" y="617" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="H3C-nF-VTV"/>
+                                    <constraint firstAttribute="height" constant="50" id="M3M-J1-nGG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JdE-Oe-NPJ" secondAttribute="bottom" id="0cF-O8-A29"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="centerX" secondItem="doF-9R-0Vh" secondAttribute="centerX" id="6WR-fT-IZl"/>
+                            <constraint firstAttribute="trailing" secondItem="agA-PQ-gnb" secondAttribute="trailing" id="MNq-SK-J1F"/>
+                            <constraint firstItem="doF-9R-0Vh" firstAttribute="centerX" secondItem="O91-0m-wLl" secondAttribute="centerX" id="OfJ-FA-SM6"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qui-Ou-Hey"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O91-0m-wLl" secondAttribute="bottom" constant="238" id="UY6-Ed-FYo"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bAA-kM-Uee"/>
+                            <constraint firstItem="doF-9R-0Vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dHB-z3-UtJ"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dvs-Ma-6At"/>
+                            <constraint firstItem="doF-9R-0Vh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="fXR-f5-Hwl"/>
+                            <constraint firstItem="O91-0m-wLl" firstAttribute="top" secondItem="doF-9R-0Vh" secondAttribute="bottom" constant="70" id="gKr-t7-Wox"/>
+                            <constraint firstItem="JdE-Oe-NPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rEh-va-rm9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="QuoteLabel" destination="doF-9R-0Vh" id="rvJ-X0-cZx"/>
+                        <outlet property="bannerView" destination="JdE-Oe-NPJ" id="4ah-26-8pB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DockBG" width="450" height="712"/>
+    </resources>
 </document>

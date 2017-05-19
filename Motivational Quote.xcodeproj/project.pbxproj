@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6E728399A9B0345A55C6F9 /* Pods_Motivational_QuoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0263FF56278A9695D28EA732 /* Pods_Motivational_QuoteTests.framework */; };
 		442EBB031EBE5DB8007C6EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EBB021EBE5DB8007C6EAB /* AppDelegate.swift */; };
 		442EBB051EBE5DB9007C6EAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EBB041EBE5DB9007C6EAB /* ViewController.swift */; };
 		442EBB081EBE5DBA007C6EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442EBB061EBE5DB9007C6EAB /* Main.storyboard */; };
 		442EBB0A1EBE5DBA007C6EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442EBB091EBE5DBA007C6EAB /* Assets.xcassets */; };
 		442EBB0D1EBE5DBA007C6EAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442EBB0B1EBE5DBA007C6EAB /* LaunchScreen.storyboard */; };
 		442EBB181EBE5DBA007C6EAB /* Motivational_QuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EBB171EBE5DBA007C6EAB /* Motivational_QuoteTests.swift */; };
+		44C3339C1EC27A5D0005238E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C3339B1EC27A5D0005238E /* GoogleService-Info.plist */; };
+		44C3339D1EC27A5D0005238E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C3339B1EC27A5D0005238E /* GoogleService-Info.plist */; };
+		6728F0EF0554D10414EC221B /* Pods_Motivational_Quote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494AB4C525C7B9A0249CEA80 /* Pods_Motivational_Quote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0263FF56278A9695D28EA732 /* Pods_Motivational_QuoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivational_QuoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F486200572CF6F3CCC02FE4 /* Pods-Motivational QuoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivational QuoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivational QuoteTests/Pods-Motivational QuoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DFD87C736757038E64323C7 /* Pods-Motivational QuoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivational QuoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivational QuoteTests/Pods-Motivational QuoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		442EBAFF1EBE5DB8007C6EAB /* Motivational Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Motivational Quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		442EBB021EBE5DB8007C6EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442EBB041EBE5DB9007C6EAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,10 @@
 		442EBB131EBE5DBA007C6EAB /* Motivational QuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Motivational QuoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		442EBB171EBE5DBA007C6EAB /* Motivational_QuoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivational_QuoteTests.swift; sourceTree = "<group>"; };
 		442EBB191EBE5DBB007C6EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C3339B1EC27A5D0005238E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4520F01669AC02C9AADAE735 /* Pods-Motivational Quote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivational Quote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivational Quote/Pods-Motivational Quote.debug.xcconfig"; sourceTree = "<group>"; };
+		494AB4C525C7B9A0249CEA80 /* Pods_Motivational_Quote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivational_Quote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9C0F718402A242F2199FA9 /* Pods-Motivational Quote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivational Quote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivational Quote/Pods-Motivational Quote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6728F0EF0554D10414EC221B /* Pods_Motivational_Quote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +62,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6E728399A9B0345A55C6F9 /* Pods_Motivational_QuoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19333AF41913E567D0BC8332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4520F01669AC02C9AADAE735 /* Pods-Motivational Quote.debug.xcconfig */,
+				6C9C0F718402A242F2199FA9 /* Pods-Motivational Quote.release.xcconfig */,
+				0F486200572CF6F3CCC02FE4 /* Pods-Motivational QuoteTests.debug.xcconfig */,
+				2DFD87C736757038E64323C7 /* Pods-Motivational QuoteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FC80B2133E38F56232131F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494AB4C525C7B9A0249CEA80 /* Pods_Motivational_Quote.framework */,
+				0263FF56278A9695D28EA732 /* Pods_Motivational_QuoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		442EBAF61EBE5DB7007C6EAB = {
 			isa = PBXGroup;
 			children = (
 				442EBB011EBE5DB8007C6EAB /* Motivational Quote */,
 				442EBB161EBE5DBA007C6EAB /* Motivational QuoteTests */,
 				442EBB001EBE5DB8007C6EAB /* Products */,
+				19333AF41913E567D0BC8332 /* Pods */,
+				3FC80B2133E38F56232131F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +116,7 @@
 				442EBB041EBE5DB9007C6EAB /* ViewController.swift */,
 				442EBB061EBE5DB9007C6EAB /* Main.storyboard */,
 				442EBB091EBE5DBA007C6EAB /* Assets.xcassets */,
+				44C3339B1EC27A5D0005238E /* GoogleService-Info.plist */,
 				442EBB0B1EBE5DBA007C6EAB /* LaunchScreen.storyboard */,
 				442EBB0E1EBE5DBA007C6EAB /* Info.plist */,
 			);
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442EBB1C1EBE5DBB007C6EAB /* Build configuration list for PBXNativeTarget "Motivational Quote" */;
 			buildPhases = (
+				695377E488FD92D85F4736DD /* [CP] Check Pods Manifest.lock */,
 				442EBAFB1EBE5DB8007C6EAB /* Sources */,
 				442EBAFC1EBE5DB8007C6EAB /* Frameworks */,
 				442EBAFD1EBE5DB8007C6EAB /* Resources */,
+				E64B692E09032D85D22E7A14 /* [CP] Embed Pods Frameworks */,
+				74AFF00923828608E17A61E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442EBB1F1EBE5DBB007C6EAB /* Build configuration list for PBXNativeTarget "Motivational QuoteTests" */;
 			buildPhases = (
+				BF23F682FCAB240F40D6E7D4 /* [CP] Check Pods Manifest.lock */,
 				442EBB0F1EBE5DBA007C6EAB /* Sources */,
 				442EBB101EBE5DBA007C6EAB /* Frameworks */,
 				442EBB111EBE5DBA007C6EAB /* Resources */,
+				68D0F2700FCC2E6375EF37C0 /* [CP] Embed Pods Frameworks */,
+				ADA0BAD6E77F0EE3BC2E57EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442EBB0D1EBE5DBA007C6EAB /* LaunchScreen.storyboard in Resources */,
+				44C3339C1EC27A5D0005238E /* GoogleService-Info.plist in Resources */,
 				442EBB0A1EBE5DBA007C6EAB /* Assets.xcassets in Resources */,
 				442EBB081EBE5DBA007C6EAB /* Main.storyboard in Resources */,
 			);
@@ -191,10 +234,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C3339D1EC27A5D0005238E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68D0F2700FCC2E6375EF37C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivational QuoteTests/Pods-Motivational QuoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		695377E488FD92D85F4736DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74AFF00923828608E17A61E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivational Quote/Pods-Motivational Quote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA0BAD6E77F0EE3BC2E57EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivational QuoteTests/Pods-Motivational QuoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF23F682FCAB240F40D6E7D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E64B692E09032D85D22E7A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivational Quote/Pods-Motivational Quote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		442EBAFB1EBE5DB8007C6EAB /* Sources */ = {
@@ -341,32 +478,39 @@
 		};
 		442EBB1D1EBE5DBB007C6EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4520F01669AC02C9AADAE735 /* Pods-Motivational Quote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
 				INFOPLIST_FILE = "Motivational Quote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.Motivational-Quote";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.quote-motivation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		442EBB1E1EBE5DBB007C6EAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C9C0F718402A242F2199FA9 /* Pods-Motivational Quote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 56NQ7Z9L75;
 				INFOPLIST_FILE = "Motivational Quote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.Motivational-Quote";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.quote-motivation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		442EBB201EBE5DBB007C6EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F486200572CF6F3CCC02FE4 /* Pods-Motivational QuoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,6 +526,7 @@
 		};
 		442EBB211EBE5DBB007C6EAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFD87C736757038E64323C7 /* Pods-Motivational QuoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,6 +559,7 @@
 				442EBB1E1EBE5DBB007C6EAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		442EBB1F1EBE5DBB007C6EAB /* Build configuration list for PBXNativeTarget "Motivational QuoteTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +568,7 @@
 				442EBB211EBE5DBB007C6EAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,60 +25,66 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DockBG" translatesAutoresizingMaskIntoConstraints="NO" id="agA-PQ-gnb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O91-0m-wLl">
-                                <rect key="frame" x="131" y="390" width="113" height="39"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="86u-8R-aYS"/>
-                                    <constraint firstAttribute="width" constant="113" id="wBm-16-nQE"/>
-                                </constraints>
-                                <color key="tintColor" red="0.070588235289999995" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="New Quote">
-                                    <color key="titleShadowColor" red="0.37356263070000001" green="1" blue="0.19478699560000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="requestNewQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kY0-fL-gvf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doF-9R-0Vh">
-                                <rect key="frame" x="16" y="79" width="343" height="241"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="l7R-6j-Xza">
+                                <rect key="frame" x="16" y="52" width="343" height="370"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Time to Recieve Daily Quote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTb-c4-16R">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="08:00 AM" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGy-iW-w0L">
+                                        <rect key="frame" x="0.0" y="29" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="pickTime:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="rUy-lf-7sy"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doF-9R-0Vh">
+                                        <rect key="frame" x="0.0" y="70" width="343" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="xee-el-w60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-Oe-NPJ" customClass="GADBannerView">
-                                <rect key="frame" x="27" y="617" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="H3C-nF-VTV"/>
                                     <constraint firstAttribute="height" constant="50" id="M3M-J1-nGG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JdE-Oe-NPJ" secondAttribute="bottom" id="0cF-O8-A29"/>
-                            <constraint firstItem="agA-PQ-gnb" firstAttribute="centerX" secondItem="doF-9R-0Vh" secondAttribute="centerX" id="6WR-fT-IZl"/>
-                            <constraint firstAttribute="trailing" secondItem="agA-PQ-gnb" secondAttribute="trailing" id="MNq-SK-J1F"/>
-                            <constraint firstItem="doF-9R-0Vh" firstAttribute="centerX" secondItem="O91-0m-wLl" secondAttribute="centerX" id="OfJ-FA-SM6"/>
-                            <constraint firstItem="agA-PQ-gnb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qui-Ou-Hey"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O91-0m-wLl" secondAttribute="bottom" constant="238" id="UY6-Ed-FYo"/>
-                            <constraint firstItem="agA-PQ-gnb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="bAA-kM-Uee"/>
-                            <constraint firstItem="doF-9R-0Vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dHB-z3-UtJ"/>
-                            <constraint firstItem="agA-PQ-gnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dvs-Ma-6At"/>
-                            <constraint firstItem="doF-9R-0Vh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="fXR-f5-Hwl"/>
-                            <constraint firstItem="O91-0m-wLl" firstAttribute="top" secondItem="doF-9R-0Vh" secondAttribute="bottom" constant="70" id="gKr-t7-Wox"/>
-                            <constraint firstItem="JdE-Oe-NPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rEh-va-rm9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="agA-PQ-gnb" secondAttribute="bottom" id="1XO-dK-Gcd"/>
+                            <constraint firstAttribute="trailing" secondItem="agA-PQ-gnb" secondAttribute="trailing" id="649-3R-S7O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JdE-Oe-NPJ" secondAttribute="bottom" id="9Gq-80-ELq"/>
+                            <constraint firstAttribute="trailing" secondItem="JdE-Oe-NPJ" secondAttribute="trailing" id="ABf-81-oPY"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aba-XA-VbR"/>
+                            <constraint firstItem="l7R-6j-Xza" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="O7F-Ra-Dlk"/>
+                            <constraint firstItem="JdE-Oe-NPJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S31-ZL-hn9"/>
+                            <constraint firstItem="agA-PQ-gnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hP1-tm-aa6"/>
+                            <constraint firstItem="l7R-6j-Xza" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rDj-fJ-BkP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l7R-6j-Xza" secondAttribute="trailing" id="rEF-3u-8mI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="QuoteLabel" destination="doF-9R-0Vh" id="rvJ-X0-cZx"/>
                         <outlet property="bannerView" destination="JdE-Oe-NPJ" id="4ah-26-8pB"/>
+                        <outlet property="timeTextField" destination="KGy-iW-w0L" id="pC1-Rg-oCn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@ target 'Motivational Quote' do
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
+  pod 'Firebase/Database'
 
   # Pods for Motivational Quote
 
